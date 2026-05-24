@@ -20,24 +20,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'pnpm'
+          cache: 'npm'
 
-      - name: Enable pnpm via Corepack
-        run: |
-          corepack enable
-          corepack prepare pnpm@latest --activate
+      - name: Install dependencies (npm)
+        run: npm install
 
-      - name: Ensure pnpm is available
-        run: |
-          if ! command -v pnpm >/dev/null 2>&1; then
-            npm install -g pnpm@latest
-          fi
-
-      - name: Install dependencies
-        run: pnpm install
-
-      - name: Build
-        run: pnpm build
+      - name: Build (npm)
+        run: npm run build
 
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
