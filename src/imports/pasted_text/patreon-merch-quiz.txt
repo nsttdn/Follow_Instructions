@@ -1,0 +1,375 @@
+Build Patreon Merch Hub Discovery Quiz in Figma Make - COMPLETE VERSION WITH ALL CORRECTIONS
+
+PROJECT: Patreon Merch Hub Discovery Quiz
+GOAL: Interactive quiz educating users about Patreon, qualifying (Creator vs Patron), driving signups
+COLORS: Dark Navy #0a0e27 (background), Purple #8b5cf6 (primary buttons), White #ffffff (text), Gray #6b7280 (muted)
+RESPONSIVE: 375px (mobile), 768px (tablet), 1200px (desktop)
+LOGO: Use provided logo_black.png file - embed as actual image on all pages
+
+===== SCREEN 0: LOGO SPLASH =====
+Duration: 2-3 seconds, auto-advance
+- Full screen, Dark Navy bg #0a0e27
+- Patreon logo (white, centered, 120px height)
+- Fade-in animation
+- Auto-advance to Hero after 2-3 sec (or click to skip)
+
+===== SCREEN 1: HERO PAGE =====
+- Logo (white, top center, 80px height)
+- Headline: "Welcome to Patreon Merch Hub"
+- Description: "Patreon is a platform connecting creators and supporters. Creators earn from subscriptions and merchandise. Patrons access exclusive content and merch."
+- Illustration: Creators + Patrons (stylized, dark theme)
+- [START QUIZ] button (purple #8b5cf6, full-width, 48px height)
+
+===== SCREEN 2: Q0 - FAMILIAR WITH PATREON? =====
+- Header: Patreon mini logo (40px) + "Patreon Hub" + Progress "Question 1 of X"
+- Question: "Are you familiar with Patreon?"
+- Options (ONLY 2 - single select):
+  - ✅ Yes, I know Patreon → Q1
+  - ❌ No, tell me more → INFO PAGE
+
+===== SCREEN 3: INFO PAGE (if Q0 = No) =====
+- Header: Back button + logo (40px) + Progress
+- Title: "What is Patreon?"
+- Subtitle: "A platform connecting creators and supporters"
+- Section 1 - For Creators (card with icon 🎬):
+  ✓ Set membership tiers with exclusive perks
+  ✓ Sell custom merchandise directly to fans
+  ✓ Earn consistent monthly income
+- Section 2 - For Patrons (card with icon 🛍️):
+  ✓ Support creators you love
+  ✓ Get exclusive content & behind-the-scenes access
+  ✓ Buy unique merch not available elsewhere
+- [Next] button (purple, full-width) → EMAIL SCREEN (for non-users learning about Patreon)
+
+===== SCREEN 4: EMAIL SCREEN (for Q0=No path) =====
+- Header: Back button + logo (40px)
+- Title: "Stay updated"
+- Subtitle: "Learn more about Patreon and creator opportunities"
+- Email input field (required, placeholder "your@email.com")
+- Checkbox: "✓ Send me updates about Patreon Hub"
+- [Continue] button (purple) → MAIN QUIZ (Q1)
+
+===== SCREEN 5: Q1 - YOUR ROLE =====
+- Header: Back button + logo (40px) + Progress "Question X of X"
+- Question: "Are you a Creator or Patron?"
+- Options (ONLY 2 - single select):
+  - 🎬 Creator → Q2_Creator path
+  - 🛍️ Patron → Q2_Patron path
+(NO "Not sure" option)
+
+===== CREATOR PATH =====
+
+===== SCREEN 6: Q2_CREATOR - DO YOU MONETIZE? =====
+- Header: Back + logo + Progress
+- Question: "Do you currently monetize your content?"
+- Options (single select):
+  - ✅ Yes, I have multiple revenue streams → Q3A
+  - ❌ No, not yet → Q3B
+  - 🤔 Maybe, still figuring it out → Q3C
+
+===== SCREEN 7: Q3A - DO YOU SELL MERCH? =====
+- Header: Back + logo + Progress
+- Question: "Do you sell merchandise to your audience?"
+- Options (single select):
+  - ✅ Yes, I already sell merch → Q4A (platforms)
+  - 🤔 Thinking about it → Q4B (concerns)
+  - ➕ No, but interested → Q4C (fears)
+  - ❌ Not interested → CREATOR THANK YOU
+
+===== SCREEN 8: Q4A - WHICH PLATFORMS? =====
+- Header: Back + logo + Progress
+- Question: "Which platforms do you currently use to sell merch?"
+- Options (MULTI-SELECT - can choose multiple):
+  - Shopify
+  - Fourthwall
+  - Spring / Printful
+  - Own website
+  - Social commerce (TikTok, Instagram)
+  - Other
+- [Continue] button after selection
+
+===== SCREEN 9: Q4B - WHAT'S HOLDING YOU BACK? =====
+(if Q3A = Thinking)
+- Auto-show purple BENEFITS CARD:
+  "✨ Patreon Merch Hub solves this:"
+  ✓ Zero inventory (Print-on-Demand)
+  ✓ No upfront costs
+  ✓ All in one dashboard
+  ✓ Higher margins (7.5% vs 25%)
+- [Continue] → Q4C (fears question)
+
+===== SCREEN 10: Q4C - BIGGEST BARRIER =====
+- Header: Back + logo + Progress
+- Question: "What scares you most about selling merch?"
+- Options (single select, show CONDITIONAL CTA based on selection):
+  - 🆘 I don't know where to start
+  - 🚚 Logistics & shipping complexity
+  - 📦 Managing inventory
+  - 💸 Pricing & staying competitive
+  - 🤝 Customer support issues
+
+CONDITIONAL CTA CARDS (show only selected option):
+
+If "Don't know where to start":
+"📖 We have a complete step-by-step guide"
+[Get Creator Handbook]
+
+If "Logistics & shipping":
+"🚚 Printful partnership handles everything"
+[See POD Details]
+
+If "Managing inventory":
+"📊 Zero-inventory model - produce when orders come"
+[Learn Print-on-Demand]
+
+If "Pricing & competition":
+"🎁 Bundle strategy keeps you competitive"
+[View Bundle Strategy]
+
+If "Customer support":
+"💬 Patreon handles all customer service"
+[See Support Model]
+
+After selecting fear + conditional CTA: [Continue] → CREATOR THANK YOU STEPS
+
+===== SCREEN 11: Q3B - WHAT STOPS YOU? =====
+(if Q2C = No)
+- Header: Back + logo + Progress
+- Question: "What's stopping you from monetizing?"
+- Options (single select):
+  - 👥 Audience too small
+  - 🧩 Too complicated technically
+  - 📚 Don't know where to start
+  - ⏰ Too busy with content
+  - 🤷 Haven't thought about it
+
+Show GROWTH TIPS CARD (purple bg):
+"💡 Start with SUBSCRIPTIONS first"
+"Build paying community → Then add merch"
+"Start small, scale up"
+
+[Continue] → CREATOR THANK YOU STEPS
+
+===== SCREEN 12: Q3C - PRIMARY GOAL? =====
+(if Q2C = Maybe)
+- Header: Back + logo + Progress
+- Question: "What's your primary revenue goal?"
+- Options (single select):
+  - 💰 Monthly recurring income (subscriptions)
+  - 🛍️ One-time sales from merch
+  - 📊 Diversify into multiple streams
+  - 🎯 Test different approaches
+
+Show HUB BENEFITS CARD (purple bg):
+"🎯 Patreon Hub is built for this:"
+✓ Subscriptions + Merch + Tip Jar
+✓ Multiple revenue in one place
+✓ All earnings in one dashboard
+✓ Lower commissions = more money
+
+[Continue] → CREATOR THANK YOU STEPS
+
+===== SCREEN 13: CREATOR THANK YOU - STEPS PAGE =====
+- Header: Patreon logo (40px) + "Almost there" or just logo
+- Large checkmark icon (green or purple circular)
+- Headline: "🚀 Welcome to Merch Hub, Creator!"
+- Subheading: "Here's how it works"
+- How it works explanation:
+  "Upload designs → Set prices → Patrons buy → We print & ship → You earn"
+- 4 numbered steps with descriptions:
+  1️⃣ Set up your shop
+     "Upload your designs and customize your storefront"
+  2️⃣ Choose what to sell
+     "Apparel, stickers, posters, accessories, and more"
+  3️⃣ Promote to your patrons
+     "Share your merch with your existing community"
+  4️⃣ We handle production & shipping
+     "No inventory, no logistics—we take care of everything"
+- [Next] button (purple, full-width) → CREATOR EMAIL PAGE
+
+===== SCREEN 14: CREATOR THANK YOU - EMAIL PAGE =====
+- Header: Logo (40px)
+- Headline: "Ready to launch?"
+- Subheading: "Share your email for setup guide"
+- Email input field (REQUIRED, marked with *)
+  Placeholder: "your@email.com"
+- Checkbox: "✓ Send me resources and setup guides"
+- [Go to Creator Dashboard] button (purple, full-width)
+After submit: Thank you message or redirect to dashboard
+
+===== PATRON PATH =====
+
+===== SCREEN 15: Q2_PATRON - CREATOR CATEGORIES =====
+- Header: Back + logo + Progress
+- Question: "What type of creators do you follow?"
+- Subtitle: "Choose one or browse categories"
+- Options (MULTI-SELECT - can choose multiple categories):
+  - Gaming
+  - Art
+  - Podcasts
+  - Writing
+  - Music
+  - Education
+- [Continue] button appears after selection(s)
+
+===== SCREEN 16: Q3_PATRON - DO YOU BUY MERCH? =====
+- Header: Back + logo + Progress
+- Question: "Do you buy merchandise from creators?"
+- Options (single select):
+  - ✅ Yes, regularly → Q4A_Merch (type)
+  - 🤔 Sometimes → Q4B_Incentives
+  - ❌ Never → Q4C_Why
+  - 😮 Didn't know they sold merch → Q4D_Discover
+
+===== SCREEN 17: Q4A_MERCH - MERCH TYPE =====
+- Header: Back + logo + Progress
+- Question: "What type of merch appeals to you?"
+- Options (single select):
+  - 👕 Apparel (shirts, hoodies)
+  - 🎯 Collectibles & figurines
+  - 💾 Digital products (wallpapers, sounds)
+  - ✍️ Signed or exclusive items
+  - 🎁 Bundles (merch + subscription)
+- [Continue] → PATRON THANK YOU
+
+===== SCREEN 18: Q4B_INCENTIVES - WHAT WOULD ENCOURAGE YOU? =====
+- Header: Back + logo + Progress
+- Question: "What would make you buy more creator merch?"
+- Options (single select):
+  - ⏰ Limited edition drops (scarcity)
+  - 🔐 Exclusive for members only
+  - 💳 Better pricing or bundles
+  - 🎨 More variety
+  - ⭐ Better quality
+- Show Hub offers card (purple):
+  "Limited drops every month"
+  "Member-exclusive access"
+  "Bundle discounts (20-30% savings)"
+- [Continue] → PATRON THANK YOU
+
+===== SCREEN 19: Q4C_WHY - WHY HAVEN'T YOU BOUGHT? =====
+- Header: Back + logo + Progress
+- Question: "Why haven't you bought creator merch yet?"
+- Options (single select):
+  - 😕 Didn't know they sold merch
+  - 💸 Too expensive
+  - 🚚 Shipping costs too high
+  - ⚠️ Worried about quality
+  - 🤷 Not sure where to find it
+- Show Hub solutions card (purple):
+  "Didn't know? → Discover all in one place"
+  "Too expensive? → Bundle discounts (save 20-30%)"
+  "Shipping high? → Free shipping on bundles"
+  "Quality concerns? → Verified reviews"
+  "Not sure where? → Everything here on Hub"
+- [Continue] → PATRON THANK YOU
+
+===== SCREEN 20: Q4D_DISCOVER =====
+- Header: Back + logo + Progress
+- Question: "Let's find their merch! Would you like to explore?"
+- Options:
+  - ✅ Yes, show me! → Show creator merch collection grid
+  - ❌ Not now → PATRON THANK YOU
+- If Yes: Show creators' merch with [Shop Now] [Notify on drops] buttons
+
+===== SCREEN 21: PATRON THANK YOU =====
+- Header: Logo (40px)
+- Large checkmark icon (green or purple circular)
+- Headline: "🎉 You're all set, Patron!"
+- Subheading: "Start exploring exclusive merch from your creators"
+- Brief list of creators they selected
+- CTAs: [Browse Merch] [Explore Collections]
+- Optional Email Section:
+  "Want updates on new drops? Optional:"
+  Email input field (NOT required, no asterisk)
+  Checkbox: "✓ Send me notifications about new drops"
+  Text: "(you can always unsubscribe later)"
+- [Finish] button (purple, full-width) → Exit / Thank you screen
+
+===== UNIVERSAL ELEMENTS =====
+
+BUTTON STYLING:
+- Primary button (purple #8b5cf6): white text, 48px height (desktop), 56px (mobile)
+- Hover: bg #7c3aed, shadow 0 4px 12px rgba(139, 92, 246, 0.3)
+- Active: bg #6d28d9, scale 0.98
+- Disabled: bg #4b5563, gray text
+- Secondary button (outline): border 1px white, transparent bg, white text
+
+OPTION CARD STYLING:
+- Default: border 1px rgba(139, 92, 246, 0.2), transparent bg, 16px padding
+- Hover: border 1px #8b5cf6, bg rgba(139, 92, 246, 0.08)
+- Selected: border 2px #8b5cf6, bg rgba(139, 92, 246, 0.15), checkmark visible (green or purple)
+
+TYPOGRAPHY:
+- Headlines: Bold Sans 24-28px, white
+- Questions: Regular Sans 16px, white
+- Options/cards: Regular Sans 14px, white
+- Labels/small text: Regular Sans 12px, gray #6b7280
+- Button text: Semi-bold 16px, white
+
+SPACING:
+- Desktop: max-width 600px, 24px padding
+- Mobile: full-width, 16px padding
+- Card gap: 16px
+- Section gap: 24px
+- Border-radius: 12px all cards
+
+HEADER (all screens after Logo Splash):
+- Left: Back button (← ) - visible from Q1 onwards
+- Center: Patreon mini logo (40px)
+- Right: Progress "Question X of Y"
+- Border bottom: 1px rgba(139, 92, 246, 0.2)
+- Sticky positioning (stays at top when scrolling)
+
+BACK BUTTON BEHAVIOR:
+- Enabled from Q1 onwards
+- Clicking back returns to previous question
+- Previous answer state is remembered
+- Can revise answers before continuing
+
+MOBILE LAYOUT:
+- Full-width, single column
+- Button height: 56px
+- Input field height: 44px
+- Safe area padding: respect env(safe-area-inset-*)
+- Sticky CTA button with shadow if needed
+
+===== COMPLETE QUIZ FLOW SUMMARY =====
+
+Logo Splash (2-3 sec)
+↓
+Hero Page (+ Patreon description)
+↓
+Q0: Familiar? (2 options: Yes / No)
+├─ YES → Q1
+└─ NO → INFO PAGE → EMAIL (learn more) → Q1
+
+Q1: Creator or Patron? (2 options)
+├─ CREATOR:
+│  Q2C → Q3A/Q3B/Q3C → Q4A/Q4B/Q4C
+│  → Creator Steps Page → Creator Email Page → Done
+│
+└─ PATRON:
+   Q2P (multi-select categories) → Q3P → Q4*/Q4B/Q4C/Q4D
+   → Patron Thank You (optional email) → Done
+
+===== TECHNICAL REQUIREMENTS =====
+
+- Logo file: logo_black.png - embed as actual image, not text
+- All transitions: 200ms smooth fade
+- Form validation: Creator email REQUIRED (*), Patron email optional
+- Multi-select (Q2P, Q4A): checkmarks appear, [Continue] button active after selection
+- Conditional logic: Each path must have clear destination
+- Analytics: Track completion rate, drop-offs, conversions
+- Responsive: Test at 375px, 768px, 1200px viewports
+- Accessibility: Keyboard navigation, proper contrast ratios (white on navy passes WCAG)
+
+===== EXPORT & TEST =====
+
+Create 2 complete flows:
+1. Creator path (Q0-Yes → Q2C → Steps → Email → Done)
+2. Patron path (Q2P → Q3P → Patron Thank You → Done)
+
+Test: All conditional logic, back button, email validation, multi-select, mobile responsiveness
+
+Ready to build! 🚀
